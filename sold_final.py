@@ -27,7 +27,7 @@ for col in numeric_cols:
         df[col] = pd.to_numeric(df[col], errors='coerce')
 
 # Drop duplicates
-df = df.drop_duplicates(subset=["ListingKey"], keep = "last")
+df = df.drop_duplicates(subset = ["ListingKey"], keep = "last")
 
 
 
